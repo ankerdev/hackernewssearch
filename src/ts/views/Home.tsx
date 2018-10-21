@@ -4,15 +4,8 @@ import { observer } from 'mobx-react';
 import { Article, Icon } from '../components';
 import { articleStore as store } from '../stores';
 
-interface IState {
-  fadeIn: boolean;
-}
-
 @observer
 export class Home extends React.Component {
-  state: IState = {
-    fadeIn: false,
-  };
   maxInputLength: number = 6;
 
   /**
