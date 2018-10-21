@@ -19,6 +19,8 @@ main {
     h1 {
         color: color('white');
         font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.05rem;
     }
     .search-wrapper {
         max-width: 100%;
@@ -78,9 +80,10 @@ main {
                 }
             }
         }
-        .button-wrapper {
-            width: 100px;
+        .paginator-wrapper {
+            width: 210px;
 
+            b, p { @extend .color--white; }
             button {
                 @extend .box-shadow;
                 background-color: color('white');

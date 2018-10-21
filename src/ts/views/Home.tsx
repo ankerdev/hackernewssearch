@@ -120,7 +120,8 @@ export class Home extends React.Component {
 
           {this.showPaginator && (
             <div className="flex align-center justify-end full-width mt-1">
-              <div className="button-wrapper flex align-center justify-between">
+              <div className="paginator-wrapper flex align-center justify-between">
+                <p>Page <b>{store.page}</b> of <b>{store.totalPages}</b></p>
                 <button
                   className={!store.canDecrementPage || store.searching ? 'muted' : ''}
                   onClick={() => store.changePage('decrement')}
